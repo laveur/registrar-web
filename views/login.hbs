@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="card">
+        <div class="card-body" style="width: 20rem">
+            <form>
+                <h1>Registrar Login</h1>
+                <div class="form-group">
+                    <label for="inputEmail" class="sr-only">Email Address</label>
+                    <input autofocus type="email" class="form-control mb-2" placeholder="Email address" required id="inputEmail" />
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input autofocus type="password" class="form-control" placeholder="Email address" required id="inputPassword" />
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+                <a href="#" class="card-link" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password</a>
+                <a href="/create" class="card-link">Create Account</a>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="forgotPasswordModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Forgot Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="inputEmail" class="sr-only">Email Address</label>
+                <input autofocus type="email" class="form-control" placeholder="Email address" required id="inputEmail" />
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Reset</button>
+      </div>
+    </div>
+  </div>
+</div>

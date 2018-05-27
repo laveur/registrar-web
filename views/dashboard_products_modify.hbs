@@ -1,0 +1,40 @@
+<form>
+    <h1>Modify Product</h1>
+    <div class="form-row">
+        <div class="form-group col-md">
+            <label for="inputProductName">Product Name</label>
+            <input type="text" id="inputProductName" class="form-control" placeholder="Name" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md">
+            <label for="inputProductName">Product Description</label>
+            <textarea id="inputProductName" class="form-control" required></textarea>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="inputProducType">Product Type</label>
+            <select id="inputProducType" class="form-control" placeholder="name" required>
+                <option>Item</option>
+                <option>Donation</option>
+                <option>Gift</option>
+                <option>Ticket</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="inputProductPrice">Product Price</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">$</div>
+                </div>
+                <input type="number" min="0.00" value="0.00" id="inputProductPrice" class="form-control" required>
+            </div>
+        </div>
+    </div>
+    <div class="form-row mb-2">
+        <div class="form-group col-md-1">
+            <a href="/dashboard/products" class="btn btn-primary">Save</a>
+        </div>
+    </div>
+</form>
